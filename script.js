@@ -1,9 +1,11 @@
+
 (function () {
     let screen = document.querySelector('.screen');
     let buttons = document.querySelectorAll('.btn');
     let clear = document.querySelector('.btn-clear');
     let btnequal = document.querySelector('.btnequal');
     
+let color;
     buttons.forEach(function(button){
         button.addEventListener('click',function(e){
             let value = e.target.dataset.num;
@@ -33,5 +35,3 @@ function bgcolor (){
 }
 
 
-
-let color;
